@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  python:
+    user: root
+    container_name: ${PROJECT_NAME}_py
+    build: 
+      context: ./python
+      dockerfile: ./Dockerfile
+    command: >
+      /bin/bash docker-entrypoint.sh
+    volumes:
+      - ./python:/var/www/html
+    #restart: always
+    stdin_open: true
+    tty: false
