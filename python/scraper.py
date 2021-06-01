@@ -17,8 +17,8 @@ socket.socket = socks.socksocket
 
 tor_checker.tor()
 
-#type target url
-base_url = ""
+#type the target url
+base_url = "your_target_url"
 
 test_files = {}
 
